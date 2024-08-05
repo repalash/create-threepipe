@@ -1,24 +1,35 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import {ContactShadowGroundPlugin, LoadingScreenPlugin, ProgressivePlugin, SSAAPlugin, ThreeViewer} from 'threepipe';
+import {TweakpaneUiPlugin} from '@threepipe/plugin-tweakpane';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+async function init() {
 
-setupCounter(document.querySelector('#counter'))
+  const viewer = new ThreeViewer({
+    canvas: document.getElementById('threepipe-canvas'),
+    msaa: false,
+    renderScale: "auto",
+    tonemap: true,
+    plugins: [LoadingScreenPlugin, ProgressivePlugin, SSAAPlugin, ContactShadowGroundPlugin]
+  });
+
+  const ui = viewer.addPluginSync(new TweakpaneUiPlugin(true));
+
+  await viewer.setEnvironmentMap('https://threejs.org/examples/textures/equirectangular/venice_sunset_1k.hdr', {
+    setBackground: false,
+  });
+
+  const result = await viewer.load('https://threejs.org/examples/models/gltf/DamagedHelmet/glTF/DamagedHelmet.gltf', {
+    autoCenter: true,
+    autoScale: true,
+  });
+
+  ui.setupPlugins(SSAAPlugin)
+  ui.appendChild(viewer.scene)
+  ui.appendChild(viewer.scene.mainCamera.uiConfig)
+
+  const model = result?.getObjectByName('node_damagedHelmet_-6514');
+  if (model) ui.appendChild(model.uiConfig, {expanded: false});
+
+}
+
+init();
