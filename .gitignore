@@ -1,9 +1,4 @@
 dist
-lib
-docs
-/index.html
-examples/**/*.js
-examples/**/*.js.map
 
 # Logs
 logs
@@ -84,3 +79,5 @@ TODOs.md
 
 generated
 template-*/package-lock.json
+template-*/node_modules
+template-*/dist/

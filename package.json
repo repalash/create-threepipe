@@ -1,6 +1,6 @@
 {
   "name": "create-threepipe",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "author": "repalash <palash@shaders.app>",
   "license": "Apache-2.0",
@@ -10,8 +10,14 @@
   },
   "files": [
     "index.js",
-    "template-*",
-    "dist"
+    "template-vanilla",
+    "template-vanilla-ts",
+    "dist",
+    "!template-**/dist",
+    "!template-**/node_modules",
+    "!template-**/pnpm-lock.yaml",
+    "!template-**/package-lock.json",
+    "!template-**/yarn.lock"
   ],
   "scripts": {
     "dev": "unbuild --stub",
