@@ -10,10 +10,10 @@
   },
   "devDependencies": {
     "vite": "^5.3.5",
-    "threepipe": "^0.0.32",
-    "@threepipe/plugin-tweakpane": "^0.3.0"
+    "threepipe": "^0.0.39",
+    "@threepipe/plugin-tweakpane": "^0.5.3"
   },
   "overrides": {
-    "threepipe": "^0.0.32"
+    "threepipe": "^0.0.39"
   }
 }
