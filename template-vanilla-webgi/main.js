@@ -32,8 +32,6 @@ async function init() {
       LoadingScreenPlugin,
       // Enable progressive rendering and SSAA
       ProgressivePlugin, SSAAPlugin,
-      // Add a ground with contact shadows
-      ContactShadowGroundPlugin
     ]
   });
 
@@ -45,6 +43,8 @@ async function init() {
     BloomPlugin,
     SSReflectionPlugin,
     DepthOfFieldPlugin,
+    // Add a ground with contact shadows
+    ContactShadowGroundPlugin
   ])
 
   // Add a plugin with a debug UI for tweaking parameters
