@@ -12,6 +12,8 @@
     "index.js",
     "template-vanilla",
     "template-vanilla-ts",
+    "template-vanilla-webgi",
+    "template-vanilla-webgi-ts",
     "dist",
     "!template-**/dist",
     "!template-**/node_modules",

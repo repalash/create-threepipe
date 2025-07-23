@@ -5,9 +5,8 @@ import spawn from 'cross-spawn'
 import minimist from 'minimist'
 import prompts from 'prompts'
 import {
-  blue,
+  blue, green,
   // cyan,
-  // green,
   // lightBlue,
   // lightGreen,
   // lightRed,
@@ -40,7 +39,8 @@ Options:
   -t, --template NAME        use a specific template
 
 Available templates:
-${yellow   ('vanilla-ts     vanilla'  )}`
+${yellow   ('vanilla-ts        vanilla'  )}
+${green   ( 'vanilla-webgi-ts  vanilla-webgi'  )}`
 // ${green    ('vue-ts         vue'      )}
 // ${cyan     ('react-ts       react'    )}
 // ${cyan     ('react-swc-ts   react-swc')}
@@ -72,12 +72,22 @@ const FRAMEWORKS: Framework[] = [
     variants: [
       {
         name: 'vanilla-ts',
-        display: 'TypeScript',
+        display: 'typescript',
         color: blue,
       },
       {
         name: 'vanilla',
-        display: 'JavaScript',
+        display: 'javascript',
+        color: yellow,
+      },
+      {
+        name: 'vanilla-webgi-ts',
+        display: 'typescript + webgi',
+        color: blue,
+      },
+      {
+        name: 'vanilla-webgi',
+        display: 'javascript + webgi',
         color: yellow,
       },
     ],

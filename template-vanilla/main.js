@@ -41,8 +41,7 @@ async function init() {
 
   // Add some debug UI elements for tweaking parameters
   ui.setupPlugins(SSAAPlugin)
-  ui.appendChild(viewer.scene)
-  ui.appendChild(viewer.scene.mainCamera.uiConfig)
+  ui.appendChild(viewer.scene.uiConfig, {expanded: true})
 
   // Every object, material, etc has a UI config that can be added to the UI to configure it.
   const model = result?.getObjectByName('node_damagedHelmet_-6514');
