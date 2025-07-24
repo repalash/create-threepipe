@@ -11,10 +11,10 @@
   "devDependencies": {
     "typescript": "^5.5.3",
     "vite": "^7.0.5",
-    "threepipe": "^0.0.53",
-    "@threepipe/plugin-tweakpane": "^0.6.3"
+    "threepipe": "^0.0.54",
+    "@threepipe/plugin-tweakpane": "^0.6.4"
   },
   "overrides": {
-    "threepipe": "^0.0.53"
+    "threepipe": "^0.0.54"
   }
 }
