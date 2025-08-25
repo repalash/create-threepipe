@@ -9,4 +9,5 @@ const templates = fs.readdirSync(__dirname).filter(f=>f.startsWith('template-'))
 cp.execSync('rm -rf generated', {stdio: 'inherit'});
 for (const template of templates) {
   cp.execSync(`npx . --template ${template} generated/p-${template}`, {stdio: 'inherit'});
+  cp.execSync(`cd generated/p-${template} && npm install && npm run build`, {stdio: 'inherit'});
 }

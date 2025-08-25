@@ -40,7 +40,9 @@ Options:
 
 Available templates:
 ${yellow   ('vanilla-ts        vanilla'  )}
-${green   ( 'vanilla-webgi-ts  vanilla-webgi'  )}`
+${green    ('vanilla-webgi-ts  vanilla-webgi'  )}
+${blue     ('r3f-webgi         r3f-webgi-ts'  )}
+`
 // ${green    ('vue-ts         vue'      )}
 // ${cyan     ('react-ts       react'    )}
 // ${cyan     ('react-swc-ts   react-swc')}
@@ -88,6 +90,23 @@ const FRAMEWORKS: Framework[] = [
       {
         name: 'vanilla-webgi',
         display: 'javascript + webgi',
+        color: yellow,
+      },
+    ],
+  },
+  {
+    name: 'r3f',
+    display: 'React Three Fiber',
+    color: yellow,
+    variants: [
+      {
+        name: 'r3f-webgi-ts',
+        display: 'r3f + typescript',
+        color: blue,
+      },
+      {
+        name: 'r3f-webgi',
+        display: 'r3f + javascript',
         color: yellow,
       },
     ],

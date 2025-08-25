@@ -10,9 +10,10 @@
   },
   "devDependencies": {
     "vite": "^7.0.5",
-    "threepipe": "^0.0.62",
+    "threepipe":  "^0.0.62",
+    "@threepipe/webgi-plugins": "^0.5.5",
     "@threepipe/plugin-tweakpane": "^0.7.2",
-    "@threepipe/webgi-plugins": "^0.5.5"
+    "@threepipe/plugin-r3f": "^0.1.2"
   },
   "overrides": {
     "threepipe": "^0.0.62"

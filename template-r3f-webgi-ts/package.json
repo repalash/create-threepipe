@@ -12,8 +12,14 @@
     "typescript": "^5.5.3",
     "vite": "^7.0.5",
     "threepipe": "^0.0.62",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "@types/react": "^19.1.11",
+    "@types/react-dom": "^19.1.7",
+    "@threepipe/webgi-plugins": "^0.5.5",
     "@threepipe/plugin-tweakpane": "^0.7.2",
-    "@threepipe/webgi-plugins": "^0.5.5"
+    "@threepipe/plugin-r3f": "^0.1.2",
+    "uiconfig-tweakpane": "^0.1.0"
   },
   "overrides": {
     "threepipe": "^0.0.62"
