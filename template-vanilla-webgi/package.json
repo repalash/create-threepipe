@@ -11,7 +11,7 @@
   "devDependencies": {
     "vite": "^7.0.5",
     "threepipe": "^0.0.62",
-    "@threepipe/plugin-tweakpane": "^0.7.2",
+    "@threepipe/plugin-tweakpane": "^0.7.3",
     "@threepipe/webgi-plugins": "^0.5.5"
   },
   "overrides": {

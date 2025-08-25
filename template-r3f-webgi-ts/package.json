@@ -17,9 +17,8 @@
     "@types/react": "^19.1.11",
     "@types/react-dom": "^19.1.7",
     "@threepipe/webgi-plugins": "^0.5.5",
-    "@threepipe/plugin-tweakpane": "^0.7.2",
-    "@threepipe/plugin-r3f": "^0.1.2",
-    "uiconfig-tweakpane": "^0.1.0"
+    "@threepipe/plugin-tweakpane": "^0.7.3",
+    "@threepipe/plugin-r3f": "^0.1.2"
   },
   "overrides": {
     "threepipe": "^0.0.62"
