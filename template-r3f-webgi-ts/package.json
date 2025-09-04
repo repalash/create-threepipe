@@ -11,16 +11,13 @@
   "devDependencies": {
     "typescript": "^5.5.3",
     "vite": "^7.0.5",
-    "threepipe": "^0.0.62",
+    "threepipe": "^0.2.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "@types/react": "^19.1.11",
     "@types/react-dom": "^19.1.7",
-    "@threepipe/webgi-plugins": "^0.5.5",
-    "@threepipe/plugin-tweakpane": "^0.7.3",
-    "@threepipe/plugin-r3f": "^0.1.2"
-  },
-  "overrides": {
-    "threepipe": "^0.0.62"
+    "@threepipe/webgi-plugins": "^0.5.10",
+    "@threepipe/plugin-tweakpane": "^0.8.4",
+    "@threepipe/plugin-r3f": "^0.1.7"
   }
 }
